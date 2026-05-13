@@ -268,7 +268,6 @@
   position: fixed;
   inset: 0;
   margin: auto;
-  z-index: 1;
   padding: 30px;
   border: 2px solid #000;
   font-family: var(--font-accent);
@@ -309,11 +308,12 @@ body:has(dialog[open]) {
   text-transform: uppercase;
 }
 
-.floppy-modal {
-  block-size: 39px;
-  inline-size: 39px;
-}
 
+
+.modal-svg{
+    min-block-size: 39px;
+  min-inline-size: 39px;
+}
 /* END MODAL */
 /* FOOTER */
 
