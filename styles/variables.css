@@ -1,1 +1,42 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  /* Шрифты */
+  --font-main: 'Inter Variable', sans-serif;
+  --font-accent: 'Press Start', sans-serif;
+
+  /* Толщина шрифта */
+  --font-weight-regular: 410;
+  --font-weight-title: 715;
+
+  /* Фоновые градиенты */
+  --vertical-lines: repeating-linear-gradient(
+    to right,
+    #d3d3d3,
+    #d3d3d3 2px,
+    transparent 2px,
+    transparent 4px
+  );
+
+  --horizontal-lines: repeating-linear-gradient(
+    to bottom,
+    #d3d3d3,
+    #d3d3d3 2px,
+    transparent 2px,
+    transparent 4px
+  );
+
+  --gradient-overlay: linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+
+  /* Расчёт ширины */
+  --container-width: clamp(375px, 260.56px + 30.52vw, 700px);
+  --logo-size: clamp(49px, 43.37px + 1.5vw, 65px);
+  --main-title: clamp(14px, 10.83px + 0.85vw, 23px);
+
+  --stroke-color: #fff;
+
+  /* Переменные для анимаций */
+
+  --heart-contour: #000;
+  --animation-fill-color: #f00;
+}

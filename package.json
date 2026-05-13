@@ -1,0 +1,20 @@
+{
+  "name": "zakrivayuschiy-teg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stylelint.config.js",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "stylelint:fix": "stylelint \"**/*.css\" --fix",
+    "stylelint:check": "stylelint \"**/*.css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.8.3",
+    "stylelint": "^17.10.0",
+    "stylelint-config-standard": "^40.0.0",
+    "stylelint-prettier": "^5.0.3"
+  }
+}
