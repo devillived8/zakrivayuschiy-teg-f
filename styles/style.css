@@ -308,10 +308,8 @@ body:has(dialog[open]) {
   text-transform: uppercase;
 }
 
-
-
-.modal-svg{
-    min-block-size: 39px;
+.modal-svg {
+  min-block-size: 39px;
   min-inline-size: 39px;
 }
 /* END MODAL */
