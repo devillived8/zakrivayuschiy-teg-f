@@ -3,7 +3,7 @@
 :root {
   /* Шрифты */
   --font-main: 'Inter Variable', sans-serif;
-  --font-accent: 'Press Start', sans-serif;
+  --font-accent: 'Press Start', fantasy;
 
   /* Толщина шрифта */
   --font-weight-regular: 410;

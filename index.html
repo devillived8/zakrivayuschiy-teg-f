@@ -21,22 +21,6 @@
       </div>
     </header>
     <main class="main">
-      <dialog class="modal" id="save-dialog">
-        <div class="modal__container">
-          <svg width="39" height="39" class="modal-svg">
-            <use class="floppy-modal" href="./svg/floppy.svg#icon-floppy"></use>
-          </svg>
-          <p class="modal__text">Вставьте дискету, чтобы продолжить</p>
-        </div>
-        <button
-          type="button"
-          class="button modal__button"
-          onclick="window['save-dialog'].close()"
-        >
-          <span class="button__text">ок</span>
-        </button>
-      </dialog>
-
       <ul class="card-list">
         <!-- ПЕРВАЯ КАРТОЧКА -->
         <li class="card-list__item">
@@ -47,9 +31,9 @@
             <div class="card__image-wrapper">
               <span class="card__watermark">&lt;/HTML&gt;</span>
               <img
-                class="card__image preparation"
+                class="card__image blur-filter"
                 src="./images/1sprint-image.svg"
-                alt="Изображение машины, символизирующей подготовку к учёбе"
+                alt="Изображение заблюренной машины, символизирующей подготовку к учёбе"
               />
             </div>
             <div class="card__text-wrapper">
@@ -63,7 +47,7 @@
               </p>
             </div>
             <div class="card__like-wrapper">
-              <button type="button" class="button card__icon-button">
+              <button aria-label="Поставить лайк" type="button" class="button card__icon-button">
                 <svg
                   class="like-icon"
                   width="39"
@@ -71,6 +55,7 @@
                   viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -109,9 +94,9 @@
             <div class="card__image-wrapper">
               <span class="card__watermark">&lt;/HTML&gt;</span>
               <img
-                class="card__image identity"
+                class="card__image contrast-filter"
                 src="./images/1sprint-image.svg"
-                alt="Изображение той же машины с фильтром"
+                alt="Изображение той же машины с контрастным фильтром"
                 loading="lazy"
               />
             </div>
@@ -129,7 +114,7 @@
               </p>
             </div>
             <div class="card__like-wrapper">
-              <button type="button" class="button card__icon-button">
+              <button aria-label="Поставить лайк" type="button" class="button card__icon-button">
                 <svg
                   class="like-icon"
                   width="39"
@@ -137,6 +122,7 @@
                   viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -175,9 +161,9 @@
             <div class="card__image-wrapper">
               <span class="card__watermark">&lt;/HTML&gt;</span>
               <img
-                class="card__image doubt"
+                class="card__image grayscale-filter"
                 src="./images/1sprint-image.svg"
-                alt="Изображение той же машины с фильтром"
+                alt="Изображение той же машины с затемняющим фильтром"
                 loading="lazy"
               />
             </div>
@@ -192,7 +178,7 @@
               </p>
             </div>
             <div class="card__like-wrapper">
-              <button type="button" class="button card__icon-button">
+              <button aria-label="Поставить лайк" type="button" class="button card__icon-button">
                 <svg
                   class="like-icon"
                   width="39"
@@ -200,6 +186,7 @@
                   viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -238,9 +225,9 @@
             <div class="card__image-wrapper">
               <span class="card__watermark">&lt;/HTML&gt;</span>
               <img
-                class="card__image perfection"
+                class="card__image contrast-saturate-filter"
                 src="./images/1sprint-image.svg"
-                alt="Изображение той же машины с фильтром"
+                alt="Изображение той же машины с констрастно-насыщенным фильтром"
                 loading="lazy"
               />
             </div>
@@ -257,7 +244,7 @@
               </p>
             </div>
             <div class="card__like-wrapper">
-              <button type="button" class="button card__icon-button">
+              <button aria-label="Поставить лайк" type="button" class="button card__icon-button">
                 <svg
                   class="like-icon"
                   width="39"
@@ -265,6 +252,7 @@
                   viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -303,9 +291,9 @@
             <div class="card__image-wrapper">
               <span class="card__watermark">&lt;/HTML&gt;</span>
               <img
-                class="card__image people"
+                class="card__image sepia-filter"
                 src="./images/1sprint-image.svg"
-                alt="Изображение той же машины с фильтром"
+                alt="Изображение той же машины с фильтром, который делает эффект старой фотографии"
                 loading="lazy"
               />
             </div>
@@ -323,7 +311,7 @@
               </p>
             </div>
             <div class="card__like-wrapper">
-              <button type="button" class="button card__icon-button">
+              <button aria-label="Поставить лайк" type="button" class="button card__icon-button">
                 <svg
                   class="like-icon"
                   width="39"
@@ -331,6 +319,7 @@
                   viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -369,9 +358,9 @@
             <div class="card__image-wrapper">
               <span class="card__watermark">&lt;/HTML&gt;</span>
               <img
-                class="card__image bypass"
+                class="card__image shadow-filter"
                 src="./images/1sprint-image.svg"
-                alt="Изображение той же машины с фильтром"
+                alt="Изображение той же машины с цветовым фильтром и тенью"
                 loading="lazy"
               />
             </div>
@@ -386,7 +375,7 @@
               </p>
             </div>
             <div class="card__like-wrapper">
-              <button type="button" class="button card__icon-button">
+              <button aria-label="Поставить лайк" type="button" class="button card__icon-button">
                 <svg
                   class="like-icon"
                   width="39"
@@ -394,6 +383,7 @@
                   viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -432,9 +422,9 @@
             <div class="card__image-wrapper">
               <span class="card__watermark">&lt;/HTML&gt;</span>
               <img
-                class="card__image fall"
+                class="card__image dark-blur-filter"
                 src="./images/1sprint-image.svg"
-                alt="Изображение той же машины с фильтром"
+                alt="Изображение той же машины с тёмным заблюренным фильтром"
                 loading="lazy"
               />
             </div>
@@ -451,7 +441,7 @@
               </p>
             </div>
             <div class="card__like-wrapper">
-              <button type="button" class="button card__icon-button">
+              <button aria-label="Поставить лайк" type="button" class="button card__icon-button">
                 <svg
                   class="like-icon"
                   width="39"
@@ -459,6 +449,7 @@
                   viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -497,9 +488,9 @@
             <div class="card__image-wrapper">
               <span class="card__watermark">&lt;/HTML&gt;</span>
               <img
-                class="card__image current"
+                class="card__image vivid-filter"
                 src="./images/1sprint-image.svg"
-                alt="Изображение той же машины с фильтром"
+                alt="Изображение той же машины с ярким фильтром"
                 loading="lazy"
               />
             </div>
@@ -518,7 +509,7 @@
               </p>
             </div>
             <div class="card__like-wrapper">
-              <button type="button" class="button card__icon-button">
+              <button aria-label="Поставить лайк" type="button" class="button card__icon-button">
                 <svg
                   class="like-icon"
                   width="39"
@@ -526,6 +517,7 @@
                   viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -558,20 +550,35 @@
           </article>
         </li>
       </ul>
+      <div class="save-wrapper">
+        <button
+          type="button"
+          class="button save"
+          onclick="window['save-dialog'].showModal()"
+          aria-controls="save-dialog"
+        >
+          <svg width="21" height="21" class="floppy">
+            <use href="./svg/floppy.svg#icon-floppy"></use>
+          </svg>
+          <span class="button__text"> Сохранить на память </span>
+        </button>
+      </div>
+      <dialog class="modal" id="save-dialog">
+        <div class="modal__container">
+          <svg width="39" height="39" class="modal-svg">
+            <use class="floppy-modal" href="./svg/floppy.svg#icon-floppy"></use>
+          </svg>
+          <p class="modal__text">Вставьте дискету, чтобы продолжить</p>
+        </div>
+        <button
+          type="button"
+          class="button modal__button"
+          onclick="window['save-dialog'].close()"
+        >
+          <span class="button__text">ок</span>
+        </button>
+      </dialog>
     </main>
-    <footer class="footer">
-      <button
-        type="button"
-        class="button save"
-        onclick="window['save-dialog'].showModal()"
-        aria-controls="save-dialog"
-      >
-        <svg width="21" height="21" class="floppy">
-          <use href="./svg/floppy.svg#icon-floppy"></use>
-        </svg>
-        <span class="button__text"> Сохранить на память </span>
-      </button>
-    </footer>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
